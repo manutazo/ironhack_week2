@@ -1,0 +1,13 @@
+%h1 POST FOR IRONHACK 
+%form{action: "/public_post", method: "Post"}
+	%label title of post
+	%input{type: 'text', name: 'title', value: @title}
+	%p
+	%label date of creation
+	%input{type: 'text', name: 'date', value: @date}
+	%p
+	%label text of post 
+	%input{type: 'text', name: 'text', value: @text}
+	%P
+	%label
+	%input{type: 'submit', value: 'add post', value: @submit}

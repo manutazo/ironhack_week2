@@ -1,0 +1,15 @@
+%h1
+	hola 
+	=  @name
+%p te has registrado correctamnete, desde ahora podras acceder sin registrarte. 
+%p
+  tu fecha de nacimiento es = @year
+  esto siginifa que tienes:
+  = @age
+  años y por lo tanto
+  - if @ > 18 
+  %a{href: "#{@name}/#{@age}"} aqui
+  si puedes entrar
+  -else 
+  tienes menos de 18 años pero estas registrado, asi que no tendras problemas.
+  %a{href: "#{@name}/#{@age}"} aqui

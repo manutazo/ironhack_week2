@@ -1,0 +1,26 @@
+%h1 IRONHACK 
+%form{action: "/create_profile", method: "post"}
+  %label name
+  %input{type: 'text', name: 'name', value: @name}
+  %p
+  %label year of birth
+  %input{type: 'text', name: 'year', value: @year}
+  %p
+  %label age 
+  %input{type: 'number', name: 'age', value: @age}
+  %P
+  experiencia:
+  %select{:name => "explist"}
+    %option{:value => "ninguna"} ninguna
+    %option{:value => "mas de seis meses"} mas de seis meses
+    %option{:value => "mas de un año"} mas de un año
+    %option{:value => "mas de 5 años"} mas de 5 años
+  %p
+  %label email
+  %input{type: 'text', name: 'email', value: @email}
+  %p
+  %label address
+  %input{type: 'text', name: 'address', value: @address}
+  %p
+  %label
+  %input{type: 'submit', value: 'registrarme', value: @submit}

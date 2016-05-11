@@ -1,0 +1,6 @@
+%h1 CHOOSE YOUR FAVORITE MOVIE..!
+%form{action: "./", method: "post"}
+  %label ¿name of movie?
+  %input{type: 'text', name: 'name', value: @name}
+  %p
+  %input{type: 'submit', name: 'send', value: @send}
